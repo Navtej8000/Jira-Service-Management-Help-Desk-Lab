@@ -1,236 +1,402 @@
 # Jira Service Management Help Desk Lab
 
-## Overview
+**Jira Service Management | ITSM | Incident Management | Ticket Triage | Troubleshooting | Escalation | Documentation | Help Desk**
 
-This project demonstrates practical **IT Help Desk / Service Desk ticket management** using **Jira Service Management**.
-
-The lab simulates common Level 1 / Level 2 support incidents from ticket creation through troubleshooting, documentation, escalation, verification, and resolution.
-
-The goal of this project is to show how I would handle real-world support tickets in a structured, professional, and SLA-focused environment.
+Hands-on Jira Service Management lab demonstrating end-to-end Help Desk ticket handling across common IT support incidents, including account lockouts, DNS issues, Outlook authentication problems, printer spooler failures, shared-folder permissions, and a critical DHCP/network outage.
 
 ---
 
-## Skills Demonstrated
+## Project Summary
 
-- Jira Service Management ticket handling
-- Incident triage and prioritization
-- Internal troubleshooting notes
-- Ticket status management and resolution
-- User communication and verification
-- Escalation to appropriate support teams
-- Active Directory account troubleshooting
-- DNS and DHCP troubleshooting
-- Outlook / password troubleshooting
-- Printer queue and spooler troubleshooting
-- Shared folder and NTFS permission troubleshooting
-- Network outage incident handling
-- Documentation of troubleshooting steps
+I built this Jira Service Management lab to practise common **Help Desk, IT Support, Service Desk, and Desktop Support** responsibilities in a structured ticketing environment.
 
----
+In this project, I:
 
-## Ticket Scenarios
-
-### 1. Account Lockout
-**Issue:** User could not sign in because the account was locked.
-
-**Workflow demonstrated:**
-- Created the support ticket
-- Investigated the user account
-- Added an internal troubleshooting note
-- Resolved the lockout issue
-- Verified access with the user
-- Closed the ticket
-
-Evidence:
-- `01-Jira-Ticket-Created-Account-Lockout`
-- `02-Jira-Internal-Note-Account-Lockout-Troubleshooting`
-- `03-Jira-Resolved-Account-Lockout-Ticket`
+- Created and managed Jira Service Management support tickets
+- Practised ticket intake, triage, prioritization, troubleshooting, and resolution
+- Added clear internal technical notes for support-team documentation
+- Worked through account lockout and authentication incidents
+- Documented DNS troubleshooting and resolution
+- Troubleshot Outlook access after a password change
+- Investigated printer queue and Windows Print Spooler issues
+- Handled a high-priority shared-folder access incident
+- Reviewed shared-folder and NTFS permission problems
+- Created and managed a critical DHCP/network outage incident
+- Escalated a critical issue to the Network Team when appropriate
+- Performed post-escalation verification before ticket closure
+- Verified successful resolution before closing incidents
+- Followed a consistent troubleshooting and documentation workflow
 
 ---
 
-### 2. DNS Troubleshooting
-**Issue:** User experienced a network/name-resolution problem.
+## Lab Environment
 
-**Workflow demonstrated:**
-- Investigated DNS configuration
-- Documented troubleshooting in an internal note
-- Corrected the DNS-related issue
-- Verified connectivity/name resolution
-- Resolved the ticket
-
-Evidence:
-- `04-Jira-DNS-Troubleshooting-Internal-Note`
-- `05-Jira-Resolved-DNS-Troubleshooting-Ticket`
-
----
-
-### 3. Outlook Password Change
-**Issue:** User could not access Outlook after a password change.
-
-**Workflow demonstrated:**
-- Created the incident
-- Reviewed authentication/password-related causes
-- Added troubleshooting notes
-- Verified Outlook access
-- Resolved the ticket
-
-Evidence:
-- `06-Jira-Outlook-Password-Change-Ticket-Created`
-- `07-Jira-Outlook-Troubleshooting-Internal-Note`
-- `08-Jira-Resolved-Outlook-Password-Change-Ticket`
+| Component | Configuration |
+|---|---|
+| Ticketing Platform | Jira Service Management |
+| Support Model | Help Desk / Service Desk |
+| Endpoint Environment | Windows |
+| Identity Support | Active Directory account troubleshooting |
+| Network Services | DNS and DHCP |
+| Email Support | Microsoft Outlook |
+| Printing | Windows Print Queue / Print Spooler |
+| File Access | Shared folders / NTFS permissions |
+| Ticket Priorities | Standard, High, Critical / Highest |
+| Escalation | Network Team escalation scenario |
+| Documentation | Internal notes, troubleshooting steps, verification, resolution |
 
 ---
 
-### 4. Printer Queue / Spooler Issue
-**Issue:** User could not print because of a print queue/spooler problem.
+# Selected Project Evidence
 
-**Workflow demonstrated:**
-- Created the ticket
-- Checked printer status and queue
-- Troubleshot the Print Spooler service
-- Verified printing functionality
-- Resolved the incident
+The screenshots below highlight the strongest support scenarios and ticket-management outcomes from the lab.
 
-Evidence:
-- `09-Jira-Printer-Queue-Ticket-Created`
-- `10-Jira-Printer-Spooler-Troubleshooting-Internal-Note`
-- `11-Jira-Resolved-Printer-Spooler-Ticket`
+The complete step-by-step evidence is available in the [`screenshots`](./screenshots/) directory.
 
 ---
 
-### 5. Shared Folder Permissions
-**Priority:** High
+## 1. Account Lockout Incident
 
-**Issue:** User could not access a required shared folder.
+Created a Help Desk ticket for a user who could not sign in because the account was locked, documented troubleshooting, restored access, and resolved the incident.
 
-**Workflow demonstrated:**
-- Created a high-priority support ticket
-- Reviewed share and NTFS permissions
-- Documented troubleshooting steps
-- Restored appropriate access
-- Verified access with the user
-- Resolved the ticket
+![Jira account lockout ticket](./screenshots/01-Jira-Ticket-Created-Account-Lockout.png)
 
-Evidence:
-- `12-Jira-High-Priority-Shared-Folder-Access-Ticket-Created`
-- `13-Jira-Shared-Folder-Permissions-Troubleshooting-Internal-Note`
-- `14-Jira-Resolved-Shared-Folder-Permissions-Ticket`
+**Skills demonstrated:** Jira Service Management, ticket creation, account troubleshooting, Active Directory support, documentation
 
 ---
 
-### 6. Critical DHCP / Network Outage
-**Priority:** Critical / Highest
+## 2. DNS Troubleshooting Documentation
 
-**Issue:** Multiple users were affected by a DHCP-related network outage.
+Investigated a DNS-related connectivity and name-resolution issue and documented the troubleshooting process in an internal Jira note before resolving the ticket.
 
-**Workflow demonstrated:**
-- Created a critical incident
-- Investigated DHCP/network symptoms
-- Documented troubleshooting findings
-- Escalated the incident to the network team
-- Verified service restoration
-- Resolved the outage ticket
+![Jira DNS troubleshooting internal note](./screenshots/04-Jira-DNS-Troubleshooting-Internal-Note.png)
 
-Evidence:
-- `15-Jira-Critical-DHCP-Network-Outage-Ticket-Created`
-- `16-Jira-Critical-DHCP-Outage-Troubleshooting-Internal-Note`
-- `17-Jira-Critical-DHCP-Outage-Escalated-to-Network-Team`
-- `18-Jira-DHCP-Outage-Post-Escalation-Verification`
-- `19-Jira-Resolved-Critical-DHCP-Network-Outage`
+**Skills demonstrated:** DNS troubleshooting, internal notes, network diagnostics, technical documentation
 
 ---
 
-## Support Workflow Used
+## 3. Outlook Password Change Support
 
-For each incident, I followed a consistent troubleshooting process:
+Handled an Outlook access issue after a password change, documented the troubleshooting steps, verified access, and resolved the support ticket.
+
+![Jira Outlook password change ticket](./screenshots/06-Jira-Outlook-Password-Change-Ticket-Created.png)
+
+**Skills demonstrated:** Outlook support, authentication troubleshooting, ticket lifecycle management, user verification
+
+---
+
+## 4. Printer Queue / Spooler Troubleshooting
+
+Investigated a user printing issue by checking the printer queue and Windows Print Spooler-related causes, documented the work, and verified successful printing.
+
+![Jira printer spooler troubleshooting](./screenshots/10-Jira-Printer-Spooler-Troubleshooting-Internal-Note.png)
+
+**Skills demonstrated:** Windows printing support, Print Spooler troubleshooting, incident documentation, endpoint support
+
+---
+
+## 5. High-Priority Shared Folder Access Incident
+
+Created a high-priority ticket for a user who could not access a required shared folder and documented permission-related troubleshooting.
+
+![Jira high priority shared folder ticket](./screenshots/12-Jira-High-Priority-Shared-Folder-Access-Ticket-Created.png)
+
+**Skills demonstrated:** ticket prioritization, shared-folder support, NTFS permissions, access troubleshooting
+
+---
+
+## 6. Critical DHCP / Network Outage Escalation
+
+Handled a critical DHCP/network outage affecting multiple users, documented troubleshooting, escalated the incident to the Network Team, verified service restoration, and resolved the ticket.
+
+![Jira critical DHCP outage escalation](./screenshots/17-Jira-Critical-DHCP-Outage-Escalated-to-Network-Team.png)
+
+**Skills demonstrated:** critical incident handling, DHCP troubleshooting, escalation, cross-team communication, service restoration verification
+
+---
+
+# Help Desk Ticket Scenarios
+
+| Scenario | Troubleshooting / Support Action | Result |
+|---|---|---|
+| User account locked | Reviewed the account issue, documented troubleshooting, restored access, and verified sign-in | Ticket resolved |
+| DNS issue | Investigated name resolution and network symptoms and documented the fix | DNS functionality restored |
+| Outlook access after password change | Reviewed password and authentication-related causes and verified Outlook access | User regained access |
+| Printer queue / spooler issue | Checked printing symptoms, queue, and spooler-related causes | Printing restored |
+| Shared-folder access issue | Reviewed access and permission-related causes | Required folder access restored |
+| Critical DHCP/network outage | Investigated outage symptoms, documented findings, escalated to Network Team, and verified recovery | Network service restored and ticket resolved |
+
+---
+
+# Jira Service Management Skills
+
+This project demonstrates practical experience with:
+
+- Ticket creation
+- Incident categorization
+- Ticket prioritization
+- Status management
+- Internal notes
+- Troubleshooting documentation
+- User-impact assessment
+- Technical investigation
+- Resolution notes
+- Ticket closure
+- Escalation
+- Post-escalation verification
+- Professional support documentation
+- End-to-end ticket lifecycle management
+
+---
+
+# Priority & Escalation Handling
+
+The lab includes different incident levels to demonstrate that not every support ticket should be handled the same way.
+
+## Standard Incidents
+
+Routine user-impact issues included:
+
+- Account lockout
+- Outlook authentication
+- Printer queue/spooler problems
+- DNS troubleshooting
+
+## High-Priority Incident
+
+A shared-folder access problem was handled as a **High-priority** support ticket because access to required business resources can directly affect user productivity.
+
+## Critical / Highest Incident
+
+A DHCP/network outage affecting multiple users was treated as a **Critical / Highest-priority** incident.
+
+The workflow included:
+
+1. Confirming the scope and impact
+2. Documenting initial troubleshooting
+3. Recording findings in Jira
+4. Escalating to the Network Team
+5. Performing post-escalation verification
+6. Confirming service restoration
+7. Resolving the incident only after verification
+
+---
+
+# Internal Notes & Documentation
+
+A major focus of this lab was documenting troubleshooting in a way that another technician could understand and continue the work if needed.
+
+Internal notes included:
+
+- Reported symptoms
+- Troubleshooting performed
+- Checks completed
+- Technical findings
+- Corrective actions
+- Escalation details
+- Verification results
+- Final resolution
+
+This reflects the importance of maintaining a clear technical history inside a service-management platform.
+
+---
+
+# Troubleshooting Method
+
+I followed a structured troubleshooting workflow throughout the lab:
 
 **Understand → Check → Test → Fix → Verify → Document**
 
-1. Understand the user-reported issue and impact
-2. Check the most likely causes
-3. Test the environment and reproduce or isolate the issue
-4. Apply the appropriate fix
-5. Verify the solution with the user or system
-6. Document the work clearly in Jira
-7. Escalate when the issue requires another support team
+## Understand
+
+Identify the user's issue, symptoms, impact, and scope.
+
+## Check
+
+Review the most likely causes, configuration, services, account state, network settings, or permissions.
+
+## Test
+
+Reproduce or isolate the issue and confirm which component is affected.
+
+## Fix
+
+Apply the appropriate corrective action or escalate when the issue requires another support team.
+
+## Verify
+
+Confirm that the service, account, application, printer, file access, or network connection is working correctly.
+
+## Document
+
+Record troubleshooting, actions taken, verification, escalation, and final resolution in Jira.
 
 ---
 
-## Repository Structure
+# Ticket Lifecycle Demonstrated
 
 ```text
-Jira-Service-Management-Help-Desk-Lab/
-│
-├── README.md
-│
-└── screenshots/
-    ├── 01-Jira-Ticket-Created-Account-Lockout.png
-    ├── 02-Jira-Internal-Note-Account-Lockout-Troubleshooting.png
-    ├── 03-Jira-Resolved-Account-Lockout-Ticket.png
-    ├── 04-Jira-DNS-Troubleshooting-Internal-Note.png
-    ├── 05-Jira-Resolved-DNS-Troubleshooting-Ticket.png
-    ├── 06-Jira-Outlook-Password-Change-Ticket-Created.png
-    ├── 07-Jira-Outlook-Troubleshooting-Internal-Note.png
-    ├── 08-Jira-Resolved-Outlook-Password-Change-Ticket.png
-    ├── 09-Jira-Printer-Queue-Ticket-Created.png
-    ├── 10-Jira-Printer-Spooler-Troubleshooting-Internal-Note.png
-    ├── 11-Jira-Resolved-Printer-Spooler-Ticket.png
-    ├── 12-Jira-High-Priority-Shared-Folder-Access-Ticket-Created.png
-    ├── 13-Jira-Shared-Folder-Permissions-Troubleshooting-Internal-Note.png
-    ├── 14-Jira-Resolved-Shared-Folder-Permissions-Ticket.png
-    ├── 15-Jira-Critical-DHCP-Network-Outage-Ticket-Created.png
-    ├── 16-Jira-Critical-DHCP-Outage-Troubleshooting-Internal-Note.png
-    ├── 17-Jira-Critical-DHCP-Outage-Escalated-to-Network-Team.png
-    ├── 18-Jira-DHCP-Outage-Post-Escalation-Verification.png
-    └── 19-Jira-Resolved-Critical-DHCP-Network-Outage.png
+User Reports Issue
+        ↓
+Ticket Created
+        ↓
+Triage & Prioritization
+        ↓
+Troubleshooting
+        ↓
+Internal Documentation
+        ↓
+Fix or Escalation
+        ↓
+Verification
+        ↓
+Resolution
+        ↓
+Ticket Closed
 ```
 
 ---
 
-## Tools and Technologies
+# Complete Documentation
 
-- Jira Service Management
-- Windows 10 / 11
-- Windows Server / Active Directory
-- DNS
-- DHCP
-- Microsoft Outlook / Microsoft 365
-- Windows Print Spooler
-- Windows file sharing and NTFS permissions
-- TCP/IP troubleshooting concepts
+The screenshots displayed above are selected examples intended for recruiters and hiring managers.
+
+The repository also contains the complete step-by-step technical evidence from the lab.
+
+<details>
+<summary><strong>📸 View All Jira Ticket Screenshots & Evidence</strong></summary>
+
+### Account Lockout
+
+1. [Ticket Created – Account Lockout](./screenshots/01-Jira-Ticket-Created-Account-Lockout.png)
+2. [Internal Note – Account Lockout Troubleshooting](./screenshots/02-Jira-Internal-Note-Account-Lockout-Troubleshooting.png)
+3. [Resolved – Account Lockout](./screenshots/03-Jira-Resolved-Account-Lockout-Ticket.png)
+
+### DNS Troubleshooting
+
+4. [Internal Note – DNS Troubleshooting](./screenshots/04-Jira-DNS-Troubleshooting-Internal-Note.png)
+5. [Resolved – DNS Troubleshooting](./screenshots/05-Jira-Resolved-DNS-Troubleshooting-Ticket.png)
+
+### Outlook Password Change
+
+6. [Ticket Created – Outlook Password Change](./screenshots/06-Jira-Outlook-Password-Change-Ticket-Created.png)
+7. [Internal Note – Outlook Troubleshooting](./screenshots/07-Jira-Outlook-Troubleshooting-Internal-Note.png)
+8. [Resolved – Outlook Password Change](./screenshots/08-Jira-Resolved-Outlook-Password-Change-Ticket.png)
+
+### Printer Queue / Print Spooler
+
+9. [Ticket Created – Printer Queue Issue](./screenshots/09-Jira-Printer-Queue-Ticket-Created.png)
+10. [Internal Note – Printer Spooler Troubleshooting](./screenshots/10-Jira-Printer-Spooler-Troubleshooting-Internal-Note.png)
+11. [Resolved – Printer Spooler Issue](./screenshots/11-Jira-Resolved-Printer-Spooler-Ticket.png)
+
+### High-Priority Shared Folder Access
+
+12. [Ticket Created – High-Priority Shared Folder Access](./screenshots/12-Jira-High-Priority-Shared-Folder-Access-Ticket-Created.png)
+13. [Internal Note – Shared Folder Permissions Troubleshooting](./screenshots/13-Jira-Shared-Folder-Permissions-Troubleshooting-Internal-Note.png)
+14. [Resolved – Shared Folder Permissions](./screenshots/14-Jira-Resolved-Shared-Folder-Permissions-Ticket.png)
+
+### Critical DHCP / Network Outage
+
+15. [Ticket Created – Critical DHCP Network Outage](./screenshots/15-Jira-Critical-DHCP-Network-Outage-Ticket-Created.png)
+16. [Internal Note – Critical DHCP Outage Troubleshooting](./screenshots/16-Jira-Critical-DHCP-Outage-Troubleshooting-Internal-Note.png)
+17. [Escalated – DHCP Outage to Network Team](./screenshots/17-Jira-Critical-DHCP-Outage-Escalated-to-Network-Team.png)
+18. [Post-Escalation Verification](./screenshots/18-Jira-DHCP-Outage-Post-Escalation-Verification.png)
+19. [Resolved – Critical DHCP Network Outage](./screenshots/19-Jira-Resolved-Critical-DHCP-Network-Outage.png)
+
+</details>
 
 ---
 
-## What This Project Shows
+# Screenshot Structure
 
-This lab demonstrates my ability to:
-
-- Handle support incidents from intake through closure
-- Prioritize tickets based on urgency and business impact
-- Write clear internal notes for other technicians
-- Troubleshoot common desktop, identity, printing, file access, and network issues
-- Escalate critical incidents appropriately
-- Verify service restoration before closing tickets
-- Maintain professional and organized support documentation
+```text
+screenshots/
+│
+├── 01-Jira-Ticket-Created-Account-Lockout.png
+├── 02-Jira-Internal-Note-Account-Lockout-Troubleshooting.png
+├── 03-Jira-Resolved-Account-Lockout-Ticket.png
+├── 04-Jira-DNS-Troubleshooting-Internal-Note.png
+├── 05-Jira-Resolved-DNS-Troubleshooting-Ticket.png
+├── 06-Jira-Outlook-Password-Change-Ticket-Created.png
+├── 07-Jira-Outlook-Troubleshooting-Internal-Note.png
+├── 08-Jira-Resolved-Outlook-Password-Change-Ticket.png
+├── 09-Jira-Printer-Queue-Ticket-Created.png
+├── 10-Jira-Printer-Spooler-Troubleshooting-Internal-Note.png
+├── 11-Jira-Resolved-Printer-Spooler-Ticket.png
+├── 12-Jira-High-Priority-Shared-Folder-Access-Ticket-Created.png
+├── 13-Jira-Shared-Folder-Permissions-Troubleshooting-Internal-Note.png
+├── 14-Jira-Resolved-Shared-Folder-Permissions-Ticket.png
+├── 15-Jira-Critical-DHCP-Network-Outage-Ticket-Created.png
+├── 16-Jira-Critical-DHCP-Outage-Troubleshooting-Internal-Note.png
+├── 17-Jira-Critical-DHCP-Outage-Escalated-to-Network-Team.png
+├── 18-Jira-DHCP-Outage-Post-Escalation-Verification.png
+└── 19-Jira-Resolved-Critical-DHCP-Network-Outage.png
+```
 
 ---
 
-## Related IT Support Projects
+# What I Learned
 
-- Active Directory Help Desk Lab
-- DNS / DHCP / Network Troubleshooting Lab
-- Microsoft 365 / Entra ID / Intune Lab
+This project strengthened my understanding of how a Help Desk technician uses a ticketing platform to manage incidents from the initial user report through final resolution.
 
-These projects together demonstrate hands-on experience with common technologies used in modern Help Desk and IT Support environments.
+The lab reinforced that technical troubleshooting is only one part of professional IT support. A strong support workflow also requires accurate ticket prioritization, clear internal documentation, verification of the fix, and appropriate escalation when an issue falls outside the technician's scope.
+
+The critical DHCP/network outage scenario was especially useful because it demonstrated the difference between resolving a routine single-user issue and managing a broader incident that requires escalation to another technical team.
+
+I also practised documenting each support scenario so that another technician could understand what was checked, what was found, what action was taken, and whether the final result was verified.
 
 ---
 
-## Career Focus
+# Skills Demonstrated
 
-I am building practical experience for roles such as:
+**Jira Service Management | ITSM | Help Desk Support | Service Desk | Incident Management | Ticket Triage | Ticket Prioritization | Internal Notes | Technical Documentation | Escalation | Active Directory Support | DNS | DHCP | Outlook | Windows Printing | Shared Folder Permissions | Troubleshooting | Verification**
+
+---
+
+# Related Projects
+
+## Active Directory Help Desk Lab
+
+[View Active Directory Help Desk Lab](https://github.com/Navtej8000/Active-Directory-Help-Desk-Lab)
+
+Hands-on Windows Server and Active Directory lab covering user and group administration, Group Policy, account lockout troubleshooting, file permissions, PowerShell onboarding, and domain support.
+
+## DNS, DHCP & Network Troubleshooting Lab
+
+[View DNS, DHCP & Network Troubleshooting Lab](https://github.com/Navtej8000/DNS-DHCP-Network-Troubleshooting-Lab)
+
+Networking lab covering DNS, DHCP, IP addressing, APIPA recovery, RRAS/NAT, routing, subnetting, Windows Firewall troubleshooting, and structured network diagnostics.
+
+## Microsoft 365, Intune & Entra ID Administration Lab
+
+[View Microsoft 365, Intune & Entra ID Administration Lab](https://github.com/Navtej8000/Microsoft-365-Intune-Entra-ID-Lab)
+
+Hands-on Microsoft cloud administration lab covering user management, identity, MFA, SSPR, Intune enrollment, device compliance, application deployment, iOS management, Conditional Access, and Microsoft 365 administration.
+
+---
+
+# Career Relevance
+
+The hands-on skills demonstrated in this project align with responsibilities commonly found in:
 
 - Help Desk Technician
 - IT Support Specialist
 - Service Desk Analyst
 - Desktop Support Technician
 - Technical Support Specialist
+- IT Support Analyst
+- Junior Systems Administrator
+
+---
+
+# Author & Contact
+
+**Navtej Singh**  
+IT Support | Help Desk | Microsoft 365 | Intune | Entra ID | Active Directory | Networking  
+Brampton, Ontario, Canada
+
+[LinkedIn](https://www.linkedin.com/in/navtej-singh-4162351a5/) | [Email](mailto:singhnavtej824@gmail.com) | [GitHub](https://github.com/Navtej8000)
+
+---
+
+**Portfolio Focus:** Hands-on Help Desk, Microsoft 365, Active Directory, Endpoint Management, Networking, and IT Service Management projects.
